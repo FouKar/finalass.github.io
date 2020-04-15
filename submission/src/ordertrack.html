@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>HOT TRENDING DEALS</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!--Using 17Track Library to return shipping results-->
+    <script src="https://www.17track.net/externalcall.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <section id="container" class="secOrdTk">
+      <div>
+        <div id="sidebarNav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="./index.html">HOME</a>
+          <a class="drpdwn">PRODUCTS <i class="fa fa-caret-down" aria-hidden="true"></i> </a>
+          <div class="dropdwncontainer">
+            <a href="./products.html#hp">Headphones</a>
+            <a href="./products.html#hm">Home</a>
+            <a href="./products.html#vdg">Video Games</a>
+            <a href="./products.html#lptp">Laptops</a>
+            <a href="./products.html#phns">Phones</a>
+          </div>
+          <a href="./ordertrack.html">TRACK ORDER</a>
+          <a href="./contact.html">CONTACT US</a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <span style="cursor: pointer;" onclick="openNav()"><i class="fas fa-bars fa-2x"></i> </span>
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./img/logo_transparent.png"
+              width="120"
+              height="120"
+              class="d-inline-block align-top"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler01"
+            aria-controls="navbarToggler01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="collapse navbar-collapse mx-auto" id="navbarToggler01">
+            <ul class="container-fluid navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a id="nlks4" href="./index.html" class="nlks nav-link text-dark">HOME</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a
+                    id="dropdownMenuLink"
+                    class="btn nlks nav-link text-dark dropdown-toggle"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >PRODUCTS</a
+                  >
+                  <div class="dropdown-menu">
+                    <a href="./products.html#hp" class="dropdown-item" id="headphones"
+                      >Headphones</a
+                    >
+                    <a href="./products.html#hm" class="dropdown-item" id="home">Home</a>
+                    <a href="./products.html#vdg" class="dropdown-item" id="vdg">Video Games</a>
+                    <a href="./products.html#lptp" class="dropdown-item" id="laptop">Laptops</a>
+                    <a href="./products.html#phns" class="dropdown-item" id="phone">Phones</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./products.html">All Products</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a id="nlks2" href="./ordertrack.html" class="nlks nav-link text-dark"
+                  >ORDER TRACKING</a
+                >
+              </li>
+              <li class="nav-item">
+                <a id="nlks1" href="./contact.html" class="nlks nav-link text-dark">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Order Tracking Forms-->
+      <div class="container ordTk">
+        <div class="d-flex flex-column justify-content-center">
+          <br />
+          <div class="row d-flex flex-row justify-content-center"></div>
+          <div class="col-lg-4 offset-lg-4">
+            <h2 class="text-uppercase text-center"><b>Track your Order</b></h2>
+          </div>
+          <br />
+          <br />
+          <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+              <form class="form-inline ordtk">
+                <div class="form-group mb-2"></div>
+                <div class="col-lg-5">
+                  <label>Enter Tracking Number: </label>
+                </div>
+                <div class="col-lg-5">
+                  <input
+                    type="text"
+                    class="input-lg"
+                    id="orderNum"
+                    name="txtOrd"
+                    placeholder="ex. LO944577145CN"
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <button type="button" class="btn btn-danger orderTkNum">Track</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tracking information content to be provided in containter below.-->
+      <div id="pkTk"></div>
+    </section>
+    <footer class="footer ftrk">
+      <div class="container-fluid text-md-left">
+        <div class="row">
+          <div class="col-lg-1 w-100 d-flex flex-column emptyFt"></div>
+          <div class="col-lg-4 d-flex flex-column align-items-start ft1">
+            <h5 class>Hot Trending Deals</h5>
+            <p>
+              Find Gadgets, Toys, Tools and Accessories at the lowest prices. We ship everyone in
+              North America and Europe and to most locations in Asia. We accept payment through
+              VISA, AMEX, MASTERCARD and Paypal.
+            </p>
+            <span class="d-inline">
+              <i class="fab fa-cc-visa fa-3x"></i>
+              <i class="fab fa-cc-mastercard fa-3x"></i>
+              <i class="fab fa-cc-amex fa-3x"></i>
+              <i class="fab fa-cc-paypal fa-3x"></i>
+              <i class="fab fa-cc-stripe fa-3x"></i>
+              <i class="fab fa-cc-apple-pay fa-3x"></i>
+            </span>
+          </div>
+          <div class="col-lg-1 w-100 emptyFt"></div>
+          <div class="col-lg-2 d-flex flex-column align-items-start ft2">
+            <h5>Site Links</h5>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./ordertrack.html">Track Your Order</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 d-flex flex-column flex-wrap align-items-start ft3">
+            <h5>Subscribe to our Newsletter</h5>
+            <p>
+              Get updates on the latest deals and promotions. Subcribe now and get additional
+              discounts and rewards.
+            </p>
+            <form action="https://formspree.io/mgelaqnd" method="POST">
+              <input type="email" name="_replyto" placeholder="ex. Joe@email.com" />
+              <button id="btnsub" class="text-light" type="submit" value="Send">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-1 w-100"></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Additional Libraries including Jquery and Bootstrap, Modernizr JS, Font Awesome-->
+    <script>
+      window.jQuery || document.write('<script src="./js/vendor/jquery-3.4.1.min.js"><\/script>');
+    </script>
+    <script src="./js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hot Trendy Deals</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and
+        security.
+      </p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div>
+      <div id="sidebarNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">HOME</a>
+        <span
+          ><a class="drpdwn">PRODUCTS <i class="fa fa-caret-down" aria-hidden="true"></i> </a
+        ></span>
+        <div class="dropdwncontainer">
+          <a href="./products.html#hp">Headphones</a>
+          <a href="./products.html#hm">Home</a>
+          <a href="./products.html#vdg">Video Games</a>
+          <a href="./products.html#lptp">Laptops</a>
+          <a href="./products.html#phns">Phones</a>
+        </div>
+        <a href="./ordertrack.html">TRACK ORDER</a>
+        <a href="./contact.html">CONTACT US</a>
+      </div>
+
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <span style="cursor: pointer;" onclick="openNav()"><i class="fas fa-bars fa-2x"></i> </span>
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./img/logo_transparent.png"
+              width="120"
+              height="120"
+              class="d-inline-block align-top"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler01"
+            aria-controls="navbarToggler01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="collapse navbar-collapse mx-auto" id="navbarToggler01">
+            <ul class="container-fluid navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a id="nlks1" href="./index.html" class="nlks nav-link text-dark">HOME</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a
+                    id="dropdownMenuLink"
+                    href="./products.html"
+                    class="btn nlks nav-link text-dark dropdown-toggle"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >PRODUCTS</a
+                  >
+                  <div class="dropdown-menu">
+                    <a href="#prodContainer" class="dropdown-item" id="headphones">Headphones</a>
+                    <a href="#prodContainer" class="dropdown-item" id="home">Home</a>
+                    <a href="#prodContainer" class="dropdown-item" id="vdg">Video Games</a>
+                    <a href="#prodContainer" class="dropdown-item" id="laptop">Laptops</a>
+                    <a href="#prodContainer" class="dropdown-item" id="phone">Phones</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./products.html">All Products</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a id="nlks3" href="./ordertrack.html" class="nlks nav-link text-dark"
+                  >ORDER TRACKING</a
+                >
+              </li>
+              <li class="nav-item">
+                <a id="nlks4" href="./contact.html" class="nlks nav-link text-dark">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselId" data-slide-to="1"></li>
+        <li data-target="#carouselId" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img
+            class="d-block"
+            src="./img/flatlay-of-boxes-and-envelopes-on-table.jpg"
+            alt="First slide"
+          />
+          <div class="carousel-caption d-none d-md-block overlay">
+            <h3>FREE SHIPPING</h3>
+            <p>Get Free Worldwide Shipping on all items</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block " src="./img/cyber-monday-shopping-sale.jpg" alt="Second slide" />
+          <div class="carousel-caption d-none d-md-block overlay">
+            <h3>SAVE UP TO 90% OFF</h3>
+            <p>Order select items by April 30 and get up to 90% off on select items!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block" src="./img/pink-spring-flowers.jpg" alt="Third slide" />
+          <div class="carousel-caption d-none d-md-block overlay">
+            <h3>HOT SPRING COLLECTION</h3>
+            <p>See our New Spring season collection for 2020. Available while quantities last.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="container-fluid trust-banner">
+      <div class="d-flex flex-row flex-wrap justify-content-center headingban">
+        <h2>Shop with Confidence</h2>
+      </div>
+      <div class="d-flex flex-row flex-wrap justify-content-center trustic">
+        <div class="col-lg-3 d-flex flex-column align-items-center">
+          <span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+            <i class="fas fa-shipping-fast fa-stack-1x"></i>
+          </span>
+          <h4>Express 2-Day Shipping</h4>
+        </div>
+        <div class="col-lg-3 d-flex flex-column align-items-center">
+          <span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+            <i class="fas fa-box-open fa-stack-1x"></i>
+          </span>
+          <h4>30-Day Returns</h4>
+        </div>
+        <div class="col-lg-3 d-flex flex-column align-items-center">
+          <span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+            <i class="fas fa-plane-departure fa-stack-1x"></i>
+          </span>
+          <h4>Free Worldwide Shipping</h4>
+        </div>
+        <div class="col-lg-3 d-flex flex-column align-items-center">
+          <span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+            <i class="fas fa-headset fa-stack-1x"></i>
+          </span>
+          <h4>24/7 Customer Support</h4>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container-fluid prodgrid">
+        <h2 class="text-uppercase text-center pd">Most Popular!</h2>
+        <div
+          id="prodContainer"
+          class="product container d-flex flex-row flex-wrap justify-content-center"
+        >
+          <div class=" col-lg-4 d-flex flex-column card phns">
+            <div class="imgBox">
+              <img
+                id="full"
+                src="./img/iphone1.jpg"
+                class="full iphn"
+                alt="Iphone midnight green"
+              />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img
+                id="i1"
+                src="./img/iphone1.jpg"
+                class="img-thumbnail"
+                alt="Iphone midnight green"
+              />
+              <img id="i2" src="./img/iphone2.jpg" class="img-thumbnail" alt="Iphone gold" />
+              <img id="i3" src="./img/iphone3.jpg" class="img-thumbnail" alt="iphone Silver" />
+              <img id="i4" src="./img/iphone4.jpg" class="img-thumbnail" alt="iphone Space Grey" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Apple iPhone 11 Pro</h5>
+              <h4 class="itmPrice">$1999.99</h4>
+              <h4 class="sale text-danger"><b>$1749.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $250.00 (13%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  12MP True Depth Front-Facing Camera, record in 4K
+                </li>
+                <li>
+                  6.5 inch Super Retina XDR OLED Display to watch your videos in high resolution
+                </li>
+                <li>
+                  Powerful A13 Bionic Processor
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card hp">
+            <div class="imgBox">
+              <img id="full5" class="full apod hphns" src="./img/MWP22.jpg" alt="airpod" />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img id="ap1" src="./img/MWP22.jpg" class="img-thumbnail" alt="airpod" />
+              <img id="ap2" src="./img/ap2.jpg" class="img-thumbnail" alt="airpod2" />
+              <img id="ap3" src="./img/5706659_sd.jpg" class="img-thumbnail" alt="airpod3" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Apple Airpods Pro</h5>
+              <h4 class="itmPrice">$399.99</h4>
+              <h4 class="sale text-danger"><b>$329.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $70.00 (20%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  Active Noise Cancellation
+                </li>
+                <li>
+                  New Lightweight Design
+                </li>
+                <li>
+                  Transparent Mode
+                </li>
+                <li>
+                  Best in-class Audio Quality
+                </li>
+                <li>
+                  Sweat and Water Resistant
+                </li>
+                <li>
+                  Customizable in-Ear Fit
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card phns">
+            <div class="imgBox">
+              <img id="full4" class="full gfld" src="./img/Galaxy1.jpg" alt="Galaxy Fold" />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img id="gf1" src="./img/Galaxy1.jpg" class="img-thumbnail" alt="Galaxy Fold 1" />
+              <img id="gf2" src="./img/Galaxy2.jpg" class="img-thumbnail" alt="Galaxy Fold 2" />
+              <img id="gf3" src="./img/galaxy3.jpg" class="img-thumbnail" alt="Galaxy Fold 3" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title text-center">Samsung Galaxy Fold SM-F907N</h5>
+              <h4 class="itmPrice">$2999.99</h4>
+              <h4 class="sale text-danger"><b>$2499.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $500.00 (15%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  Foldable 7.3" QXGA+ Dynamic AMOLED Main Display and 4.6" HD+ Super AMOLED Display
+                </li>
+                <li>
+                  16MP Ultra Wide Rear Camera
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card hp">
+            <div class="imgBox">
+              <img
+                id="full2"
+                class=" full headphones"
+                src="./img/1527770779_1407140.jpg"
+                alt="Beats Raptors Edition"
+              />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img
+                id="bt1"
+                src="./img/1527770779_1407140.jpg"
+                class="img-thumbnail"
+                alt="Beats 1"
+              />
+              <img id="bt2" src="./img/beats2.jpg" class="img-thumbnail" alt="Beats 2" />
+              <img id="bt3" src="./img/beats3.jpg" class="img-thumbnail" alt="Beats 3" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Beats By Dr. Dre Solo3</h5>
+              <h4 class="itmPrice">$299.99</h4>
+              <h4 class="sale text-danger"><b>$214.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $85.00 (30%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  Fine Tuned Acoustics for sound quality and clarity
+                </li>
+                <li>
+                  Built-in dual beam mic
+                </li>
+                <li>
+                  Cushioned, pivoting ear cups
+                </li>
+                <li>
+                  Folding Design for portability
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card lptp">
+            <div class="imgBox">
+              <img id="full3" class="full laptop" src="./img/macbookpro.jpeg" alt="Macbook Pro" />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img id="mb1" src="./img/macbookpro.jpeg" class="img-thumbnail" alt="Macbook Pro 1" />
+              <img id="mb2" src="./img/mb2.jpg" class="img-thumbnail" alt="Macbook Pro 2" />
+              <img id="mb3" src="./img/mwcbook3.jpg" class="img-thumbnail" alt="Macbook Pro 3" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Macbook Pro w/ Touch Bar</h5>
+              <h4 class="itmPrice">$2999.99</h4>
+              <h4 class="sale text-danger"><b>$2599.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $400.00 (15%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  16-inch Retina Display
+                </li>
+                <li>
+                  16GB 2666MHz DDR4 memory
+                </li>
+                <li>
+                  512GB SSD storage
+                </li>
+                <li>
+                  2.6GHz 6‑core Intel Core i7 CPU
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card hm">
+            <div class="imgBox">
+              <img id="full6" class="full TV" src="./img/Rokuplayer.png" alt="Roku Player" />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img id="rk1" src="./img/Rokuplayer.png" class="img-thumbnail" alt="Roku 1" />
+              <img id="rk3" src="./img/roku3.png" class="img-thumbnail" alt="Roku 3" />
+              <img id="rk2" src="./img/Roku2.png" class="img-thumbnail" alt="Roku 2" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Roku Streaming Stick</h5>
+              <h4 class="itmPrice">$49.99</h4>
+              <h4 class="sale text-danger"><b>$44.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $5.00 (10%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  Stream over 100,000 TV Shows and Movies with access to Netflix, Disney Plus,
+                  Youtube, and other streaming services
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card hm">
+            <div class="imgBox">
+              <img
+                id="full7"
+                class="full TV"
+                src="./img/SonosPersonalAssistant.png"
+                alt="Sonos Personal Assistant"
+              />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img
+                id="so1"
+                src="./img/SonosPersonalAssistant.png"
+                class="img-thumbnail"
+                alt="Sonos 1"
+              />
+              <img id="so2" src="./img/sonos2.jpg" class="img-thumbnail" alt="Sonos 2" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Sonos Move w/ Alexa</h5>
+              <h4 class="itmPrice">$499.99</h4>
+              <h4 class="sale text-danger"><b>$399.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $100.00 (20%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  Voice Control - Built-in Alexa
+                </li>
+                <li>
+                  WiFi and Bluetooth - Connect with other devices
+                </li>
+                <li>
+                  Excellent sound quality
+                </li>
+                <li>10 hours of battery life</li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card vgm">
+            <div class="imgBox">
+              <img
+                id="full8"
+                class="full consoles"
+                src="./img/three-modes-in-one.png"
+                alt="Nintendo Switch"
+              />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img
+                id="sw1"
+                src="./img/three-modes-in-one.png"
+                class="img-thumbnail"
+                alt="Switch 1"
+              />
+              <img id="sw2" src="./img/switch2.jpg" class="img-thumbnail" alt="Switch 2" />
+              <img id="sw3" src="./img/switch3.jpg" class="img-thumbnail" alt="Switch 3" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Nintendo Switch</h5>
+              <h4 class="itmPrice">$399.99</h4>
+              <h4 class="sale text-danger"><b>$299.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $100.00 (25%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  Includes Dock with HDMI support for tv gameplay
+                </li>
+                <li>
+                  Joy-Con Grip Controllers for flexibility
+                </li>
+
+                <li>
+                  4"x9.5" Display for maximum portability
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card vgm">
+            <div class="imgBox">
+              <img id="full9" class="full consoles" src="./img/psd_sd.jpg" alt="Playstation-4" />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img id="ps1" src="./img/psd_sd.jpg" class="img-thumbnail" alt="PS4 1" />
+              <img id="ps2" src="./img/ps42.jpg" class="img-thumbnail" alt="PS4 2" />
+              <img id="ps3" src="./img/ps43.jpg" class="img-thumbnail" alt="PS4 3" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">PlayStation 4 Pro</h5>
+              <h4 class="itmPrice">$399.99</h4>
+              <h4 class="sale text-danger"><b>$329.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $70.00 (20%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  1TB SSD Storage space
+                </li>
+                <li>
+                  Boost Mode for enhanced graphics
+                </li>
+                <li>
+                  HDR Technology for high resolution gaming
+                </li>
+                <li>
+                  4K entertainment - Stream 4K videos, shows and movies
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card vgm">
+            <div class="imgBox">
+              <img
+                id="full1"
+                class="full"
+                src="./img/61ueGFutGgL._AC_SX679_.jpg"
+                alt="Oculus Rift"
+              />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img
+                id="oc1"
+                src="./img/61ueGFutGgL._AC_SX679_.jpg"
+                class="img-thumbnail"
+                alt="Occulus Rift 1"
+              />
+              <img id="oc2" src="./img/oc2.jpg" class="img-thumbnail" alt="Occulus Rift 2" />
+              <img id="oc3" src="./img/oc3.jpg" class="img-thumbnail" alt="Occulus Rift 3" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Oculus Rift S</h5>
+              <h4 class="itmPrice">$999.99</h4>
+              <h4 class="sale text-danger"><b>$699.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $300.00 (30%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  Improved Optics
+                </li>
+                <li>
+                  Ergonomic Design
+                </li>
+                <li>
+                  Oculus Touch Controllers
+                </li>
+                <li>
+                  Oculus Insight Tracking
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card vgm">
+            <div class="imgBox">
+              <img
+                id="fullx"
+                class="full"
+                src="./img/vg-20200324-feature-xbox-series-x-fg-m.png"
+                alt="xboxseriesx"
+              />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img
+                id="x1"
+                src="./img/vg-20200324-feature-xbox-series-x-fg-m.png"
+                class="img-thumbnail"
+                alt="Xbox X Series 1"
+              />
+              <img id="x2" src="./img/xbox2.jpg" class="img-thumbnail" alt="Xbox X Series 2" />
+              <img id="x3" src="./img/xbox3.jpg" class="img-thumbnail" alt="Xbox X Series 3" />
+              <img id="x4" src="./img/xbox4.jpg" class="img-thumbnail" alt="Xbox X Series 4" />
+            </div>
+
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Xbox Series X</h5>
+              <h4 class="text-success">New Release!</h4>
+              <h4 class="sale text-danger"><b>$699.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">Limited Quantities</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  12 Teraflops Processing Power
+                </li>
+                <li>
+                  4K Gaming and Display
+                </li>
+                <li>
+                  Whisper-quiet fan
+                </li>
+                <li>
+                  120 FPS Gaming
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 d-flex flex-column card lptp">
+            <div class="imgBox">
+              <img id="fulls" class="full" src="./img/1570034360_1506674.jpg" alt="Surface" />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <img
+                id="s1"
+                src="./img/1570034360_1506674.jpg"
+                class="img-thumbnail"
+                alt="Surface 1"
+              />
+              <img id="s2" src="./img/surface2.jpg" class="img-thumbnail" alt="Surface 2" />
+              <img id="s3" src="./img/surface3.jpg" class="img-thumbnail" alt="Surface 3" />
+            </div>
+            <hr />
+            <div class="container d-flex flex-column align-items-center card-body">
+              <h5 class="card-title">Microsoft Surface Pro 7</h5>
+              <h4 class="itmPrice">$2499.99</h4>
+              <h4 class="sale text-danger"><b>$1529.99</b></h4>
+              <h6 class="card-subtitle text-danger text-center">You Save $970.00 (40%)</h6>
+              <br />
+              <ul class="card-text">
+                <li>
+                  Ultra-Slim and Lightweight
+                </li>
+                <li>
+                  8GB LPDDR4x RAM
+                </li>
+                <li>
+                  256GB SSD, Intel i5 Processor
+                </li>
+                <li>
+                  10.5 hours of Battery Life
+                </li>
+              </ul>
+            </div>
+            <div class="btnCard">
+              <a class="btn buy btn-danger" href="#" role="button">Buy Now</a>
+              <button type="button" class="btn atc btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container-fluid text-md-left">
+        <div class="row">
+          <div class="col-lg-1 w-100 d-flex flex-column emptyFt"></div>
+          <div class="col-lg-4 d-flex flex-column align-items-start ft1">
+            <h5 class>Hot Trending Deals</h5>
+            <p>
+              Find Gadgets, Toys, Tools and Accessories at the lowest prices. We ship everyone in
+              North America and Europe and to most locations in Asia. We accept payment through
+              VISA, AMEX, MASTERCARD and Paypal.
+            </p>
+            <span class="d-inline">
+              <i class="fab fa-cc-visa fa-3x"></i>
+              <i class="fab fa-cc-mastercard fa-3x"></i>
+              <i class="fab fa-cc-amex fa-3x"></i>
+              <i class="fab fa-cc-paypal fa-3x"></i>
+              <i class="fab fa-cc-stripe fa-3x"></i>
+              <i class="fab fa-cc-apple-pay fa-3x"></i>
+            </span>
+          </div>
+          <div class="col-lg-1 w-100 emptyFt"></div>
+          <div class="col-lg-2 d-flex flex-column align-items-start ft2">
+            <h5>Site Links</h5>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./ordertrack.html">Track Your Order</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 d-flex flex-column flex-wrap align-items-start ft3">
+            <h5>Subscribe to our Newsletter</h5>
+            <p>
+              Get updates on the latest deals and promotions. Subcribe now and get additional
+              discounts and rewards.
+            </p>
+            <form action="https://formspree.io/mgelaqnd" method="POST">
+              <input type="email" name="_replyto" placeholder="ex. Joe@email.com" />
+              <button id="btnsub" class="text-light" type="submit" value="Send">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-1 w-100"></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Additional Libraries including Jquery and Bootstrap, Modernizr JS, Font Awesome-->
+    <script src="./js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery || document.write('<script src="./js/vendor/jquery-3.4.1.min.js"><\/script>');
+    </script>
+    <script src="./js/plugins.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

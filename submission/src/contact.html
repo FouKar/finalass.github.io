@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hot Trendy Deals</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and
+        security.
+      </p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div>
+      <div id="sidebarNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">HOME</a>
+        <a class="drpdwn">PRODUCTS <i class="fa fa-caret-down" aria-hidden="true"></i> </a>
+        <div class="dropdwncontainer">
+          <a href="./products.html#hp">Headphones</a>
+          <a href="./products.html#hm">Home</a>
+          <a href="./products.html#vdg">Video Games</a>
+          <a href="./products.html#lptp">Laptops</a>
+          <a href="./products.html#phns">Phones</a>
+        </div>
+        <a href="./ordertrack.html">TRACK ORDER</a>
+        <a href="./contact.html">CONTACT US</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <span style="cursor: pointer;" onclick="openNav()"><i class="fas fa-bars fa-2x"></i> </span>
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./img/logo_transparent.png"
+            width="120"
+            height="120"
+            class="d-inline-block align-top"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler01"
+          aria-controls="navbarToggler01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="collapse navbar-collapse mx-auto" id="navbarToggler01">
+          <ul class="container-fluid navbar-nav justify-content-center">
+            <li class="nav-item">
+              <a id="nlks1" href="./index.html" class="nlks nav-link text-dark">HOME</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  id="dropdownMenuLink"
+                  href="./products.html"
+                  class="btn nlks nav-link text-dark dropdown-toggle"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >PRODUCTS</a
+                >
+                <div class="dropdown-menu">
+                  <a href="./products.html#hp" class="dropdown-item" id="headphones">Headphones</a>
+                  <a href="./products.html#hm" class="dropdown-item" id="home">Home</a>
+                  <a href="./products.html#vdg" class="dropdown-item" id="vdg">Video Games</a>
+                  <a href="./products.html#lptp" class="dropdown-item" id="laptop">Laptops</a>
+                  <a href="./products.html#phns" class="dropdown-item" id="phone">Phones</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="./products.html">All Products</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a id="nlks3" href="./ordertrack.html" class="nlks nav-link text-dark"
+                >ORDER TRACKING</a
+              >
+            </li>
+            <li class="nav-item">
+              <a id="nlks4" href="./contact.html" class="nlks nav-link text-dark">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <form action="https://httpbin.org/post" method="post">
+      <div class="col-md-6 d-flex flex-column offset-md-3 order-md-1">
+        <h2 class="mb-3 mt-3 text-center contactHd">Any Questions or Concerns?</h2>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="firstName"
+              id="firstName"
+              placeholder=""
+              value=""
+              required=""
+            />
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input
+              type="text"
+              name="lastName"
+              class="form-control"
+              id="lastName"
+              placeholder=""
+              value=""
+              required=""
+            />
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email Address<span class="text-muted"></span></label>
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+            required=""
+          />
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            name="address"
+            class="form-control"
+            id="address"
+            placeholder="12 Finch Ave. W."
+            required=""
+          />
+          <div class="invalid-feedback">
+            Please enter your home address.
+          </div>
+        </div>
+
+        <div class="row d-flex flex-row align-items-center">
+          <datalist id="city">
+            <option value="Abbotsford"> </option>
+            <option value="Airdrie"> </option>
+            <option value="Ajax"> </option>
+            <option value="Aurora"> </option>
+            <option value="Barrie"> </option>
+            <option value="Belleville"> </option>
+            <option value="Blainville"> </option>
+            <option value="Brampton"> </option>
+            <option value="Brantford"> </option>
+            <option value="Brossard"> </option>
+            <option value="Burlington"> </option>
+            <option value="Burnaby"> </option>
+            <option value="Caledon"> </option>
+            <option value="Calgary"> </option>
+            <option value="Cambridge"> </option>
+            <option value="Cape Breton"> </option>
+            <option value="Chatham-Kent"> </option>
+            <option value="Chilliwack"> </option>
+            <option value="Clarington"> </option>
+            <option value="Coquitlam"> </option>
+            <option value="Delta"> </option>
+            <option value="Drummondville"> </option>
+            <option value="Edmonton"> </option>
+            <option value="Fredericton"> </option>
+            <option value="Gatineau"> </option>
+            <option value="Granby"> </option>
+            <option value="Grande Prairie"> </option>
+            <option value="Greater Sudbury"> </option>
+            <option value="Guelph"> </option>
+            <option value="Halifax"> </option>
+            <option value="Halton Hills"> </option>
+            <option value="Hamilton"> </option>
+            <option value="Kamloops"> </option>
+            <option value="Kawartha Lakes"> </option>
+            <option value="Kelowna"> </option>
+            <option value="Kingston"> </option>
+            <option value="Kitchener"> </option>
+            <option value="Langley"> </option>
+            <option value="Laval"> </option>
+            <option value="Lethbridge"> </option>
+            <option value="London"> </option>
+            <option value="Longueuil"> </option>
+            <option value="Maple Ridge"> </option>
+            <option value="Markham"> </option>
+            <option value="Medicine Hat"> </option>
+            <option value="Milton"> </option>
+            <option value="Mirabel"> </option>
+            <option value="Mississauga"> </option>
+            <option value="Moncton"> </option>
+            <option value="Montreal"> </option>
+            <option value="Nanaimo"> </option>
+            <option value="New Westminster"> </option>
+            <option value="Newmarket"> </option>
+            <option value="Niagara Falls"> </option>
+            <option value="Norfolk County"> </option>
+            <option value="North Bay"> </option>
+            <option value="North Vancouver"> </option>
+            <option value="North Vancouver"> </option>
+            <option value="Oakville"> </option>
+            <option value="Oshawa"> </option>
+            <option value="Ottawa"> </option>
+            <option value="Peterborough"> </option>
+            <option value="Pickering"> </option>
+            <option value="Port Coquitlam"> </option>
+            <option value="Prince George"> </option>
+            <option value="Quebec City"> </option>
+            <option value="Red Deer"> </option>
+            <option value="Regina"> </option>
+            <option value="Repentigny"> </option>
+            <option value="Richmond"> </option>
+            <option value="Richmond Hill"> </option>
+            <option value="Saanich"> </option>
+            <option value="Saguenay"> </option>
+            <option value="Saint John"> </option>
+            <option value="Saint-Hyacinthe"> </option>
+            <option value="Saint-Jerome"> </option>
+            <option value="Saint-Jean-sur-Richelieu"> </option>
+            <option value="Sarnia"> </option>
+            <option value="Saskatoon"> </option>
+            <option value="Sault Ste. Marie"> </option>
+            <option value="Sherbrooke"> </option>
+            <option value="St. Albert"> </option>
+            <option value="St. Catharines"> </option>
+            <option value="Saint John"> </option>
+            <option value="St. John"> </option>
+            <option value="Saint Albert"> </option>
+            <option value="Saint Catharines"> </option>
+            <option value="Strathcona County"> </option>
+            <option value="Surrey"> </option>
+            <option value="Terrebonne"> </option>
+            <option value="Thunder Bay"> </option>
+            <option value="Toronto"> </option>
+            <option value="Trois-Rivieres"> </option>
+            <option value="Vancouver"> </option>
+            <option value="Vaughan"> </option>
+            <option value="Victoria"> </option>
+            <option value="Waterloo"> </option>
+            <option value="Welland"> </option>
+            <option value="Whitby"> </option>
+            <option value="Windsor"> </option>
+            <option value="Winnipeg"> </option>
+            <option value="Wood Buffalo"> </option>
+          </datalist>
+
+          <div class="col-md-4 mb-3">
+            <label for="cityC">City</label>
+            <input
+              class="form-control"
+              list="city"
+              id="cityC"
+              name="city"
+              placeholder="Choose a City"
+              required=""
+            />
+            <div class="invalid-feedback">
+              Please enter a city
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="PostalCode">Zip</label>
+            <input
+              type="text"
+              name="postalCode"
+              class="form-control"
+              id="PostalCode"
+              placeholder=""
+              pattern="[a-zA-Z][0-9][a-zA-Z]\s?[0-9][a-zA-Z][0-9]"
+              required
+            />
+            <div class="invalid-feedback">
+              Postal code required.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="phoneNum">Phone Number<span class="text-muted"></span></label>
+            <input
+              class="form-control"
+              type="tel"
+              name="phone"
+              id="phoneNum"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a valid phone number
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="phonerequest"
+            name="phonerequest"
+          />
+          <label class="custom-control-label" for="phonerequest"
+            >Would you like to be phoned?</label
+          >
+        </div>
+        <hr class="mb-4" />
+        <h5>What would you like to discuss?</h5>
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input
+              id="qst"
+              name="problem"
+              type="radio"
+              class="custom-control-input"
+              value="question"
+              required
+            />
+            <label class="custom-control-label" for="qst">Question</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input
+              id="cmnt"
+              name="problem"
+              type="radio"
+              value="comment"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="cmnt">Comment</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input
+              id="orderNo"
+              name="problem"
+              type="radio"
+              class="custom-control-input"
+              value="orderproblem"
+            />
+            <label class="custom-control-label" for="orderNo">Order Problem</label>
+          </div>
+        </div>
+        <div class="row orderNoDiv" style="display:none;">
+          <div class="col-md-6">
+            <label for="radTxt" class="lblOrdNo">Order Number</label>
+            <input
+              type="text"
+              id="radTxt"
+              name="orderNumber"
+              class="form-control"
+              placeholder="Order Number"
+            />
+          </div>
+        </div>
+
+        <div class="row txtAr">
+          <div class="col-md-6 d-flex flex-column">
+            <label for="message">Tell us about the situation</label>
+            <textarea
+              id="message"
+              name="story"
+              placeholder="Write a comment"
+              rows="10"
+              required
+            ></textarea>
+            <div class="invalid-feedback">
+              Please Enter a valid message
+            </div>
+          </div>
+        </div>
+        <div class="row hdtxt">
+          <div class="col-md-3">
+            <input id="hdnTxt" type="hidden" name="hiddentxt" value="Fouzan" />
+            <div class="invalid-feedback">
+              Please Enter a valid name to be hidden
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex flex-row justify-content-center">
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <input class="btnSubForm" type="submit" />
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <footer class="footer">
+      <div class="container-fluid text-md-left">
+        <div class="row">
+          <div class="col-lg-1 w-100 emptyFt"></div>
+          <div class="col-lg-4 d-flex flex-column align-items-start ft1">
+            <h5 class>Hot Trending Deals</h5>
+            <p>
+              Find Gadgets, Toys, Tools and Accessories at the lowest prices. We ship everyone in
+              North America and Europe and to most locations in Asia. We accept payment through
+              VISA, AMEX, MASTERCARD and Paypal.
+            </p>
+            <span class="d-inline">
+              <i class="fab fa-cc-visa fa-3x"></i>
+              <i class="fab fa-cc-mastercard fa-3x"></i>
+              <i class="fab fa-cc-amex fa-3x"></i>
+              <i class="fab fa-cc-paypal fa-3x"></i>
+              <i class="fab fa-cc-stripe fa-3x"></i>
+              <i class="fab fa-cc-apple-pay fa-3x"></i>
+            </span>
+          </div>
+          <div class="col-lg-1 w-100 d-flex flex-column emptyFt"></div>
+          <div class="col-lg-2 d-flex flex-column align-items-start ft2">
+            <h5>Site Links</h5>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./ordertrack.html">Track Your Order</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 d-flex flex-column flex-wrap align-items-start ft3">
+            <h5>Subscribe to our Newsletter</h5>
+            <p>
+              Get updates on the latest deals and promotions. Subcribe now and get additional
+              discounts and rewards.
+            </p>
+            <form action="https://formspree.io/mgelaqnd" method="POST">
+              <input type="email" name="_replyto" placeholder="ex. Joe@email.com" />
+              <button id="btnsub" class="text-light" type="submit" value="Send">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-1 w-100"></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Additional Libraries including Jquery and Bootstrap, Modernizr JS, Font Awesome-->
+    <script src="./js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery || document.write('<script src="/js/vendor/jquery-3.4.1.min.js"><\/script>');
+    </script>
+    <script src="./js/plugins.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
